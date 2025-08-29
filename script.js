@@ -1,10 +1,13 @@
 function girardado(){
-      const dice = document.querySelector("section");
+      const dado = document.querySelector("section");
   const result = document.getElementById("resultado");
 
-  const diceFaces = ["⚀", "⚁", "⚂", "⚃", "⚄", "⚅"];
+  const dados = ["⚀", "⚁", "⚂", "⚃", "⚄", "⚅"];
   const randomIndex = Math.floor(Math.random() * 6);
 
-  dice.textContent = diceFaces[randomIndex];
+  dado.textContent = dados[randomIndex];
   result.textContent = `Você tirou ${randomIndex + 1}!`;
+
+
 }
+ 
